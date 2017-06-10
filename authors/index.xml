@@ -13,5 +13,14 @@
 	<atom:link href="https://chinasio.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Forget</title>
+      <link>https://chinasio.github.io/authors/forget/</link>
+      <pubDate>Sat, 10 Jun 2017 00:00:00 +0000</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/authors/forget/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
