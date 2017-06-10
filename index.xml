@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>行走在 GIS 边缘</title>
+    <link>https://chinasio.github.io/</link>
+    <description>Recent content on 行走在 GIS 边缘</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>yangchguo@gmail.com (forget)</managingEditor>
+    <webMaster>yangchguo@gmail.com (forget)</webMaster>
+    <copyright>Powered by [Hugo](https://gohugo.io) &amp; Hosted by [GitHub](https://github.com/).</copyright>
+    <lastBuildDate>Sat, 10 Jun 2017 09:05:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://chinasio.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>重点研发计划地球观测与导航专项</title>
+      <link>https://chinasio.github.io/blog/%E9%87%8D%E7%82%B9%E7%A0%94%E5%8F%91%E8%AE%A1%E5%88%92%E5%9C%B0%E7%90%83%E8%A7%82%E6%B5%8B%E4%B8%8E%E5%AF%BC%E8%88%AA%E4%B8%93%E9%A1%B9/</link>
+      <pubDate>Sat, 10 Jun 2017 09:05:20 +0800</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/blog/%E9%87%8D%E7%82%B9%E7%A0%94%E5%8F%91%E8%AE%A1%E5%88%92%E5%9C%B0%E7%90%83%E8%A7%82%E6%B5%8B%E4%B8%8E%E5%AF%BC%E8%88%AA%E4%B8%93%E9%A1%B9/</guid>
+      <description>地球观测与导航 重点专项2017年 1. 与GIS直接相关的立项项目有4项： 姓名 单位 立项项目名称 项目编号 闾国年 南京师范大学 全息地图获取与位置信息聚合</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://chinasio.github.io/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/blog/</guid>
+      <description>地球观测与导航 重点专项2017年 1. 与GIS直接相关的立项项目有4项：    姓名 单位 立项项目名称 项目编号     闾国年 南京师范大学 全息地图获取与位置信息聚合技术 2017YFB0503500   裴韬 中科院地理所 地理大数据挖掘与时空模式发现 2017YFB0503600   龚健雅 武汉大学 全球位置信息叠加协议与位置服务网技术 2017YFB0503700   吴华意 武汉大学 城市群经济区域建设与管理空间信息重点服务及应用示范 2017YFB0503800   王桥 环境保护部卫星环境应用中心 城乡生态环境综合监测空间信息服务及应用示范 2017YFB0503900    立项项目与指南对应关系 4.2 全息地图获取与位置信息聚合技术（关键技术攻关类） 研究内容：围绕全息地图表达与建模、空间聚合与地理分析等关键科学问题，面向基于位置的高精度、多内容服务等重大应用需求，发展全息地图多尺度表达与场景建模、符号化表达与自适应综合等理论与方法，攻克多尺度室内外/地上下多维数据快速获取与融合、泛在时空信息溯源与特征信息标签、全息地图要素编码与时空泛在信息在线聚合、高动态信息环境中地图自主更新、全息地图制图与虚实融合表达、全地理信息内容的位置服务等前沿核心技术，研发高精度、智能化全息地图获取系统，构建面向智慧城市与生态文明建设的重大应用试验系统，促进我国位置服务向生产性信息消费发展。 考核指标：国家行业规范标准不少于 5 项（建议稿），核心理论方法的标志性论文不少于 20 篇，申请自主核心专利不少于 10 项；研制全息地图获取硬件平台一套，制图软件系统一套，全息地图制图系统的符号覆盖典型地物特征与现象，独立地物符号不少于 100 种；支持不少于 5 种泛在位置信息溯源方法，特征信息标签正确率不低于 85%；地图数据变化发现时间不大于 12h，自主更新时间不超过 1h；智慧城市应用行业覆盖不少于 10 类，生态文明应用行业覆盖不少于 10 类，开展面向城管、环境、警务、公众等典型示范应用。
+4.3 地理大数据挖掘与时空模式发现 （前沿与关键技术攻关类） 研究内容：围绕大数据空间解析的关键科学问题，面向社交网的消费性大数据、对地观测的结构化大数据深化应用等需求，发展位置认知与语义理解、时空图谱与动态演化特征等理论方法，攻克地理大数据协同计算、图斑动力模式挖掘、模糊位置精准化等前沿核心技术，发展位置数据自动发现与匹配和校正与跟踪、海量地理时空数据模式发现等算法，研发大数据空间解析原型系统，实现大数据时空解析理论的原始创新，促进地理大数据科学研究的深化发展。 考核指标：代表性专著与论文不少于 50 篇（卷），申请自主核心技术专利不少于 20 项（特别是地图+方面的专利不少于 10 项）；大数据空间解析算法不少于 100 种，位置信息聚合种类不少于 50 类；支持 PB 级时空大数据的关联分析，实时在线制图响应速度优于亚秒；地学信息图谱的案例不少于 5 项。</description>
+    </item>
+    
+  </channel>
+</rss>
