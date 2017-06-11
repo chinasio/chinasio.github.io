@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>行走在 GIS 边缘</title>
-    <link>https://chinasio.github.io/</link>
-    <description>Recent content on 行走在 GIS 边缘</description>
+    <title>工具软件 on 行走在 GIS 边缘</title>
+    <link>https://chinasio.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</link>
+    <description>Recent content in 工具软件 on 行走在 GIS 边缘</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
     <managingEditor>yangchguo@gmail.com (forget)</managingEditor>
@@ -11,7 +11,7 @@
     <copyright>Powered by [Hugo](https://gohugo.io) &amp; Hosted by [GitHub](https://github.com/).</copyright>
     <lastBuildDate>Sun, 11 Jun 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://chinasio.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chinasio.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,15 +21,6 @@
       <author>yangchguo@gmail.com (forget)</author>
       <guid>https://chinasio.github.io/blog/vscode/</guid>
       <description>众里寻他千百度，蓦然回首，那人却在灯火阑珊处。 Visual Studio Code 给我的感觉就是如此。在不用Markdown做笔记就不好意思说自己在做笔记的今天，找到一款</description>
-    </item>
-    
-    <item>
-      <title>2017年地球观测与导航重点研发计划立项项目</title>
-      <link>https://chinasio.github.io/blog/gisplans2017/</link>
-      <pubDate>Sat, 10 Jun 2017 00:00:00 +0000</pubDate>
-      <author>yangchguo@gmail.com (forget)</author>
-      <guid>https://chinasio.github.io/blog/gisplans2017/</guid>
-      <description>地球观测与导航 重点专项2017年 1. 与GIS直接相关的立项项目有4项： 姓名 单位 立项项目名称 项目编号 闾国年 南京师范大学 全息地图获取与位置信息聚合</description>
     </item>
     
   </channel>
