@@ -9,15 +9,24 @@
     <managingEditor>yangchguo@gmail.com (forget)</managingEditor>
     <webMaster>yangchguo@gmail.com (forget)</webMaster>
     <copyright>Powered by [Hugo](https://gohugo.io) &amp; Hosted by [GitHub](https://github.com/).</copyright>
-    <lastBuildDate>Sat, 10 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chinasio.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>DEM</title>
+      <link>https://chinasio.github.io/tags/DEM/</link>
+      <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/tags/DEM/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>GIS</title>
       <link>https://chinasio.github.io/tags/GIS/</link>
-      <pubDate>Sat, 10 Jun 2017 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
       <author>yangchguo@gmail.com (forget)</author>
       <guid>https://chinasio.github.io/tags/GIS/</guid>
       <description></description>

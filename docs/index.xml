@@ -13,5 +13,16 @@
 	<atom:link href="https://chinasio.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title></title>
+      <link>https://chinasio.github.io/docs/ArcGIS-10.1-and-matplotlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/docs/ArcGIS-10.1-and-matplotlib/</guid>
+      <description>ArcGIS 10.1 and matplotlib Graphing at 10.1 is now easier because ArcGIS comes with matplotlib. To me, this is an exciting enhancement that broadens what python developers can do when it comes to visualization of data in ArcGIS.
+A simple example of this is the basic X/Y plot but instead of using random number, assume we have a table and the X/Y (distance/elevation) is in your table.
+Example: python code import arcpy import os import matplotlib.</description>
+    </item>
+    
   </channel>
 </rss>

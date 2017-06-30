@@ -9,10 +9,55 @@
     <managingEditor>yangchguo@gmail.com (forget)</managingEditor>
     <webMaster>yangchguo@gmail.com (forget)</webMaster>
     <copyright>Powered by [Hugo](https://gohugo.io) &amp; Hosted by [GitHub](https://github.com/).</copyright>
-    <lastBuildDate>Sun, 11 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chinasio.github.io/authors/forget/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ubuntu下的GIS软件安装：UbuntuGIS</title>
+      <link>https://chinasio.github.io/blog/ubuntugis/</link>
+      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/blog/ubuntugis/</guid>
+      <description>1.Ubuntu系统 Ubuntu是开源Linux系统中应用最广的系统分支之一（桌面系统），主要Linux环境中开发的软件都能够在该系统中运行</description>
+    </item>
+    
+    <item>
+      <title>水深地形模型制作</title>
+      <link>https://chinasio.github.io/blog/bathymety_process/</link>
+      <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/blog/bathymety_process/</guid>
+      <description>水深地形产品制作 1.多波束（Multibeam bathymetry） CUBE v2 2.单波束（SingleBeam bathyme） 单波束编辑 3.水深数</description>
+    </item>
+    
+    <item>
+      <title>数据立方体-地球立方体研究</title>
+      <link>https://chinasio.github.io/blog/datacube/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/blog/datacube/</guid>
+      <description>不同圈层-表面-密度界面-物理界面的叠加组合。 基础数据更新技术： Remove-restore 数据质量控制QC 元数据 数据库 更新方法 更新结果</description>
+    </item>
+    
+    <item>
+      <title>从元数据到地理语义</title>
+      <link>https://chinasio.github.io/blog/metadata2ontology/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/blog/metadata2ontology/</guid>
+      <description>1. 元数据 1.1. 元数据的定义 元资料（Metadata），又称元数据、诠释资料、中介资料、中继资料、后设资料等，为描述其他资料资讯的资料。有三种不同</description>
+    </item>
+    
+    <item>
+      <title>开源GIS相关技术跟踪</title>
+      <link>https://chinasio.github.io/blog/opensourcegis/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/blog/opensourcegis/</guid>
+      <description>1.开源GIS桌面软件（Desktop） 2.开源GIS空间数据库 2.1 Postgre+PostGIS开源空间数据库 3.开源GIS解决方案（Arc</description>
+    </item>
     
     <item>
       <title>Visual Studio Code 使用</title>
