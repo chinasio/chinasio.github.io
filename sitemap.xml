@@ -42,6 +42,10 @@
   </url>
   
   <url>
+    <loc>https://chinasio.github.io/docs/ArcGISTools/</loc>
+  </url>
+  
+  <url>
     <loc>https://chinasio.github.io/authors/</loc>
     <priority>0</priority>
   </url>

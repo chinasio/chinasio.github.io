@@ -88,5 +88,15 @@ A simple example of this is the basic X/Y plot but instead of using random numbe
 Example: python code import arcpy import os import matplotlib.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://chinasio.github.io/docs/ArcGISTools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/docs/ArcGISTools/</guid>
+      <description>ARCGIS效率工具集 1.Create Filled Contours script tool for ArcGIS 10 Contours are lines that connect locations of equal value in a raster dataset. They are useful because they can show the shape of the phenomena represented by the raster surface that may be otherwise difficult to see.
+In addition to raster and contour line representations of surfaces, visualizing and symbolizing surfaces as contour polygons (Fig. 1) can provide useful capabilities. For example, querying the particular polygon can give you the area of elevation values between 100 m and 200 m, or allow you to select the polygon that represents the perimeter of a water body, or summarize all the vegetation types within each contour range.</description>
+    </item>
+    
   </channel>
 </rss>
