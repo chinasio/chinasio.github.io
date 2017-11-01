@@ -9,10 +9,19 @@
     <managingEditor>yangchguo@gmail.com (forget)</managingEditor>
     <webMaster>yangchguo@gmail.com (forget)</webMaster>
     <copyright>Powered by [Hugo](https://gohugo.io) &amp; Hosted by [GitHub](https://github.com/).</copyright>
-    <lastBuildDate>Fri, 30 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chinasio.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>地球物理数据交点差计算工具-x2sys</title>
+      <link>https://chinasio.github.io/blog/x2sys/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      <author>yangchguo@gmail.com (forget)</author>
+      <guid>https://chinasio.github.io/blog/x2sys/</guid>
+      <description>&amp;emsp;&amp;emsp;x2sys是GMT软件扩展工具包，主要用于地球物理测线数据的管理和交点差的计算。x2sys软件包有10个计算模块构成</description>
+    </item>
     
     <item>
       <title>Ubuntu下的GIS软件安装：UbuntuGIS</title>

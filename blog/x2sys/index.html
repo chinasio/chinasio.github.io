@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.21" />
+<meta name="author" content="forget">
+<meta name="description" content=" ">
+<title>地球物理数据交点差计算工具-x2sys | 行走在 GIS 边缘</title>
+
+
+<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/prism/1.5.1/themes/prism-solarizedlight.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/prism/1.5.1/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/featherlight/1.5.0/featherlight.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://chinasio.github.io/css/style.css"/>
+<link rel="stylesheet" href="https://chinasio.github.io/css/mobile.css"/>
+
+<link rel="shortcut icon" href="https://chinasio.github.io/images/favicon.ico" type="image/x-icon" type="image/png" />
+<link rel="icon" href="https://chinasio.github.io/images/apple-touch-icon-152x152.png" type="image/png" />
+<link rel="apple-touch-icon" href="https://chinasio.github.io/images/apple-touch-icon.png"  type="image/png" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://chinasio.github.io/images/apple-touch-icon-57x57.png" type="image/png" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://chinasio.github.io/images/apple-touch-icon-72x72.png" type="image/png" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://chinasio.github.io/images/apple-touch-icon-76x76.png" type="image/png" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://chinasio.github.io/images/apple-touch-icon-114x114.png" type="image/png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://chinasio.github.io/images/apple-touch-icon-120x120.png" type="image/png" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://chinasio.github.io/images/apple-touch-icon-144x144.png" type="image/png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://chinasio.github.io/images/apple-touch-icon-152x152.png" type="image/png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://chinasio.github.io/images/apple-touch-icon-180x180.png" type="image/png" />
+<meta name="msapplication-TileImage" content="https://chinasio.github.io/images/apple-touch-icon-144x144.png"/>
+<meta name="msapplication-TileColor" content="#d83434"/>
+
+
+
+
+</head>
+
+<body>
+  <div class="container">
+    <header id="header">
+    <div class="outer">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-menu" aria-expanded="false">
+          	                <span class="sr-only">Toggle navigation</span>
+          	                <span class="icon-bar"></span>
+          	                <span class="icon-bar"></span>
+          	                <span class="icon-bar"></span>
+          	            </button>
+    		            <a class="navbar-brand" href="https://chinasio.github.io/">
+    			            <span class="site-title">行走在 GIS 边缘</span>
+    		            </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        
+                        <li class="nav-item"><a href="/">首页</a></li>
+                        
+                        <li class="nav-item"><a href="/docs/">文档</a></li>
+                        
+                        <li class="nav-item"><a href="/blog/">博客</a></li>
+                        
+                        <li class="nav-item"><a href="/data/">数据</a></li>
+                        
+                        
+                        
+                        <li><a href="https://chinasio.github.io/index.xml"><i class="fa fa-rss-square fa-lg" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="outer">
+
+        
+<section id="main">
+    <article>
+        <div class="article-inner">
+            <header class="article-header">
+    <h1 class="article-title" itemprop="name">
+	<a href="https://chinasio.github.io/blog/x2sys/" class="permalink">地球物理数据交点差计算工具-x2sys</a>
+    </h1>
+
+    
+    <div class="article-meta">
+        
+        
+        
+        <div class="article-category">
+            <i class="fa fa-sitemap"></i>
+            
+            <a class="article-category-link" href="https://chinasio.github.io/categories/%E8%AE%A1%E7%AE%97%E5%B7%A5%E5%85%B7/">计算工具</a>
+            
+            
+        </div>
+        
+        
+
+        
+        
+        
+        <div class="article-category">
+		<i class="fa fa-tags"></i>
+            
+            <a class="article-category-link" href="https://chinasio.github.io/tags/GMT/">GMT</a>
+            
+            
+        </div>
+        
+        
+
+        
+        
+        
+        <div class="article-category">
+            <i class="fa fa-user"></i>
+            
+            <a class="article-category-link" href="https://chinasio.github.io/authors/forget/">forget</a>
+            
+            
+        </div>
+        
+        
+
+        
+        <time class="article-date" datetime="2017-11-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017年11月01日</time>
+        
+    </div>
+    
+</header>
+
+            <div class="article-body" itemprop="articleBody">
+                
+
+                
+
+<p>&emsp;&emsp;x2sys是GMT软件扩展工具包，主要用于地球物理测线数据的管理和交点差的计算。x2sys软件包有10个计算模块构成，通过建立测线数据库和数据参数规格说明（称之为TAG），用户可以通过添加、抽取等多种操作对整个测线区块或局部区域的测线进行交点差统计。</p>
+
+<p>x2sys模块简介：</p>
+
+<ul>
+<li>x2sys_init 创建一个新的测线数据库</li>
+<li>x2sys_binlist 创建分区索引（bin index）</li>
+<li>x2sys_put 更新测线数据</li>
+<li>x2sys_get 按参数提取测线数据文件列</li>
+<li>x2sys_cross 计算交点差</li>
+<li>x2sys_report 形成交点差计算结果报告</li>
+<li>x2sys_list 从交点差数据库中抽取子区交点差</li>
+<li>x2sys_solve 计算每一条测线的交点差改正值</li>
+<li>x2sys_datalist 数据导出</li>
+<li>x2sys_merge 多个交点差数据库合并
+[/code]</li>
+</ul>
+
+<p>&emsp;&emsp;更详细的功能介绍见Paul Wessel关于该扩展模块的论文：<a href="www.sciencedirect.com/science/article/pii/S0098300409002945" target="_blank">Tools for analyzing intersecting tracks: The x2sys package</a>.</p>
+
+<p>&emsp;&emsp;计算前，用户必须指定一个<strong>可读写的目录</strong>作为存放测线参数路径，叫做$HOME_X2SYS，顾名思义，这个目录就是用来存放x2sys各类参数及中间过程的“根目录”。另外，需要根据所处理数据的格式建立一个<strong>数据格式说明</strong>，称作Definition Files,系统自带了一些简单的数据格式说明文件，存放于GMT软件包的Share/x2sys文件夹中。数据格式说明文件有2部分构成：表头说明和列说明。表头说明用于告诉程序数据格式，比如ASCII，二进制文件等，数据文件有无表头说明，如有则需要跳过（SKIP）几行等；数据列说明有<em>name type NaN NaN-proxy scale offset oformat</em> 7个选项组成。
+- name 列名称，对于经纬度列需要注意：lon和lat为地理坐标，x和y为笛卡尔坐标。
+- type 数据类型，如果是ascii则为a，其他类型根据文件格式确定，如字符c，整形i等
+- NaN 文件中如果需要将特定数值（如-9999）用NaN代替，则填Y，否则填N。
+- NaN-proxy 需要用NaN代替的数值
+- scale 读入的数值乘以scale值，不需要修改则为1。
+- offset 乘以scale值后加该数值
+- oformat 输入文件的格式，采用C语言的输入输出格式。</p>
+
+<p>以下是经纬度坐标为例，由lon、lat、z三列数据组成的文本文件数据的数据格式说明，保存为xyz.def。</p>
+
+<pre><code># Define file for X2SYS processing of ASCII xyz files
+# This file applies to a 3-column ASCII files, generated from dumping the nadir beam;
+# longitude, latitude, depth
+# from mbsbystem using the command;
+# mblist -I $input file list -OXYZU -P3 &gt; $output file
+#---------------------------------------------------------------------
+#ASCII      # The input file is ASCII
+#SKIP 1     # The number of header records to skip
+#---------------------------------------------------------------------
+#name   intype  NaN-proxy?  NaN-proxy   scale   offset  oformat
+lon a   N       0       1   0   %10.7f
+lat a   N       0       1   0   %9.7f
+z   a   N       0       1   0   %7.3f
+</code></pre>
+
+<p>下面是利用多波束中央波束计算测线交点差的代码：
+```shell code</p>
+
+<h1 id="cruise-identifier">Cruise identifier</h1>
+
+<p>fileID=&ldquo;Arctic8&rdquo;</p>
+
+<p>ROOT_DIR=<code>pwd</code>
+CRUISE_DIR=$ROOT_DIR&rdquo;/&ldquo;$fileID
+X2SYS_DIR=$CRUISE_DIR&rdquo;/X2SYS&rdquo;
+NADIR_DIR=$CRUISE_DIR&rdquo;/XYZ&rdquo;</p>
+
+<h1 id="remove-existing-x2sys-system-directories-files-for-example-cruise-make-a-blank-ones">remove existing x2sys system directories\files for example cruise, make a blank ones</h1>
+
+<p>if [ -d &ldquo;$X2SYS_DIR&rdquo; ]; then
+    rm -rf $X2SYS_DIR
+fi
+mkdir $X2SYS_DIR</p>
+
+<h1 id="create-xyzt-definition-file">Create xyzt definition file</h1>
+
+<p>cat &gt; $X2SYS_DIR&rdquo;/xyz.def&rdquo; &lt;&lt; EOF</p>
+
+<h1 id="define-file-for-x2sys-processing-of-ascii-xyz-files">Define file for X2SYS processing of ASCII xyz files</h1>
+
+<h1 id="this-file-applies-to-a-3-column-ascii-files-generated-from-dumping-the-nadir-beam">This file applies to a 3-column ASCII files, generated from dumping the nadir beam;</h1>
+
+<h1 id="longitude-latitude-depth">longitude, latitude, depth</h1>
+
+<h1 id="from-mbsbystem-using-the-command">from mbsbystem using the command;</h1>
+
+<h1 id="mblist-i-input-file-list-oxyzu-p3-output-file">mblist -I $input file list -OXYZU -P3 &gt; $output file</h1>
+
+<p>#&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+#ASCII      # The input file is ASCII
+#SKIP 1     # The number of header records to skip
+#&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+#name   intype  NaN-proxy?  NaN-proxy   scale   offset  oformat
+lon a   N       0       1   0   %10.7f
+lat a   N       0       1   0   %9.7f
+z   a   N       0       1   0   %7.3f
+EOF</p>
+
+<h1 id="save-the-default-x2sys-home-location-if-set">Save the default x2sys home location (if set)</h1>
+
+<p>X2SYS_HOME_OLD=$X2SYS_HOME</p>
+
+<h1 id="change-the-default-x2sys-home-directory-to-the-local-directory-for-our-example">Change the default x2sys home directory to the local directory for our example</h1>
+
+<p>cd $X2SYS_DIR
+export X2SYS_HOME=<code>pwd</code></p>
+
+<h1 id="initialize-the-tag-folder">Initialize the TAG folder</h1>
+
+<p>#x2sys_init $fileID -Gd -Cg -Dxyz -F -V -Wd1
+x2sys_init $fileID -V -G -Dxyz -Rg -Ce -Ndk -Nsn -I1/1 -Etxt
+cd $fileID</p>
+
+<h1 id="copy-cruise-trackline-filenames-to-datalist-d">Copy cruise trackline filenames to datalist.d</h1>
+
+<p>ls $NADIR_DIR &gt; datalist.d</p>
+
+<h1 id="create-path-file">Create path file</h1>
+
+<h1 id="the-absolute-path-to-the-folder-with-the-extracted-nadir-beams">the absolute path to the folder with the extracted nadir beams</h1>
+
+<p>echo $NADIR_DIR &gt; $fileID&rdquo;_paths.txt&rdquo;</p>
+
+<p>#x2sys_binlist
+#x2sys_binlist -V -T$fileID :datalist.d &gt; tracks.tbf</p>
+
+<p>#x2sys_put
+#x2sys_put -V -T$fileID tracks.tbf
+#x2sys_get -V -T$fileID -R-173.5/-167.<sup>5</sup>&frasl;<sub>75</sub>.<sup>2</sup>&frasl;<sub>76</sub>.70 -Fz &gt; tracks.tbf</p>
+
+<h1 id="calculate-crossovers">Calculate crossovers</h1>
+
+<h1 id="set-speed-constraint-so-that-we-dont-calculate-crossings-for-speeds-less-that-1-0289-m-s">Set speed constraint so that we dont calculate crossings for speeds less that 1.0289 m/s</h1>
+
+<h1 id="e-g-2-knots-helps-remove-self-crossings-from-holding-position">e.g.  2 knots&hellip;&hellip;(helps remove self crossings from holding position)</h1>
+
+<p>x2sys_cross =datalist.d -T$fileID -Qe -V -Sl1.0289 &gt; $fileID.CROSS</p>
+
+<p>if test -s $fileID.CROSS; then
+    echo &ldquo;CROSSOVERS FOUND&rdquo;;</p>
+
+<pre><code># Output the crossovers from the database
+x2sys_list -Cz -T$fileID $fileID.CROSS -FNc -V &gt; tmp
+
+# x2sys_list has a tendency to find &quot;self crossings&quot; along straight line segments (yes,
+# even with the speed constraint). We will remove these from the list. It is thereby
+# important to make sure your lines are not obscenely long and self-crossing.
+awk '{if ($1 != $2) {print $0} else next}' tmp &gt; $fileID.LIST
+/bin/rm tmp
+
+# Find corrections (although we dont apply any)
+x2sys_solve -Cz -T$fileID $fileID.LIST -V -Ec &gt; $fileID.SOLVE
+
+touch N_`awk 'NR &gt; 3 {print $0}' *.LIST | minmax | awk '{print $4}'`
+</code></pre>
+
+<p>else
+    echo &ldquo;NO CROSSOVERS&hellip;..ABORTING&hellip;.&rdquo;
+fi</p>
+
+<p>```</p>
+
+            </div>
+            <footer class="article-footer">
+</footer>
+
+        </div>
+        
+<nav>
+    <ul class="pager">
+        
+        <li class="previous">
+            <a href="https://chinasio.github.io/blog/ubuntugis/">
+                <strong class="article-nav-caption">
+                上一篇
+                </strong>
+                <div class="article-nav-title">Ubuntu下的GIS软件安装：UbuntuGIS</div>
+            </a>
+        </li>
+        
+
+        
+    </ul>
+</nav>
+
+
+    </article>
+</section>
+
+        </div>
+    </div>
+    <footer id="footer" class="footer">
+    <div class="copyright">
+        &copy;  2017 - 
+        <span itemprop="copyrightYear"> 2017</span>
+        <span class="with-love"><i class="fa fa-heart"></i></span>
+        <span class="author" itemprop="copyrightHolder">forget</span>
+    </div>
+    <div class="powered-by">Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> &amp; Hosted by <a href="https://github.com/" target="_blank">GitHub</a>.</div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/prism/1.5.1/prism.min.js"></script>
+<script src="//cdn.bootcss.com/prism/1.5.1/components/prism-bash.min.js"></script>
+<script src="//cdn.bootcss.com/prism/1.5.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.12/clipboard.js"></script>
+<script src="//cdn.bootcss.com/featherlight/1.5.0/featherlight.min.js"></script>
+
+<script src="https://chinasio.github.io/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>
